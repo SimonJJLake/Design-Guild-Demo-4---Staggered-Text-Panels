@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
+#root {
+  margin: 0 0;
+}
+.button {
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+}
+.text-container {
+  position: relative;
+  height: 36vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  font-family: "EB Garamond", serif;
+  font-size: 8vw;
+  height: 12vw;
+  width: max-content;
+  position: absolute;
+  overflow: hidden;
+  transition: all 1.5s cubic-bezier(0.69, -0.03, 0.17, 1.04);
+  /* transform: translateX(-50%); */
+}
+.panels-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  user-select: none;
+}
+.panel-container {
+  color: #fbdbc1;
+  height: 100vh;
+  width: 25vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-right: 2px #fbdbc1 inset;
+}
+.panel {
+  position: absolute;
+  width: 100vw;
+}
+.selectable-text-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  color: transparent;
+}
